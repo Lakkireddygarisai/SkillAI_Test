@@ -14,13 +14,15 @@ Phoenix,Female,810000
 Philadelphia,Male,750000
 Philadelphia,Female,770000"""
 
-
 import pandas as pd
+
+
+
+
 
 def get_highest_male_population(df):
 
-    df = pd.read_csv('Book1.csv')
-
+    
     #print(df)
 
     total_data= df
@@ -34,4 +36,6 @@ def get_highest_male_population(df):
 
     return(get_city_and_pop)
 
+df = pd.read_csv('Book1.csv')
+print(get_highest_male_population(df))
 
